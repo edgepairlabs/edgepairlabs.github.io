@@ -82,4 +82,4 @@ We build AI for real devices, real environments, and real users.
 **EdgePair Labs**  
 *Pairing Edge Devices with Practical AI.*
 
-© 2026 EdgePair Labs
+© 2026 EdgePair Labs • support@edgepairlabs.com
