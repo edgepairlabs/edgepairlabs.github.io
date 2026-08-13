@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>推荐硬件 — Snooker Clip &amp; Poolball Clip</title>
+
+    <meta name="description"
+          content="Snooker Clip 和 Poolball Clip 推荐使用的 IP 摄像头和 Android 平板电脑。">
+
+    <meta name="theme-color" content="#0b0f14">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                "Helvetica Neue",
+                Arial,
+                sans-serif;
+            color: #e8edf3;
+            background: #0b0f14;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        /* =========================
+           导航栏
+        ========================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(11, 15, 20, 0.88);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #202832;
+        }
+
+        .nav {
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.4px;
+        }
+
+        .logo span {
+            color: #6ee7b7;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 14px;
+            color: #aeb8c5;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* =========================
+           Hero
+        ========================== */
+
+        .hero {
+            padding: 110px 0 100px;
+            text-align: center;
+            border-bottom: 1px solid #202832;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 6px 12px;
+            border: 1px solid #29343f;
+            border-radius: 999px;
+            color: #6ee7b7;
+            background: #111820;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.08;
+            letter-spacing: -2.8px;
+            font-weight: 750;
+        }
+
+        .hero h1 .accent {
+            color: #6ee7b7;
+        }
+
+        .hero-subtitle {
+            max-width: 730px;
+            margin: 28px auto 0;
+            color: #aeb8c5;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .hero-note {
+            margin-top: 24px;
+            color: #7f8c99;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Section
+        ========================== */
+
+        section {
+            padding: 90px 0;
+            border-bottom: 1px solid #202832;
+        }
+
+        .section-label {
+            color: #6ee7b7;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            margin: 0;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+        }
+
+        .section-intro {
+            max-width: 730px;
+            margin-top: 18px;
+            color: #aeb8c5;
+            font-size: 17px;
+        }
+
+        /* =========================
+           产品
+        ========================== */
+
+        .apps {
+            margin-top: 42px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .app-card {
+            padding: 26px;
+            border: 1px solid #29343f;
+            border-radius: 12px;
+            background: #10161d;
+        }
+
+        .app-card h3 {
+            margin: 0 0 8px;
+            font-size: 20px;
+        }
+
+        .app-card h3 span {
+            color: #6ee7b7;
+        }
+
+        .app-card p {
+            margin: 0;
+            color: #929eac;
+            font-size: 14px;
+        }
+
+        /* =========================
+           推荐硬件
+        ========================== */
+
+        .recommendation {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .hardware-card {
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+            border: 1px solid #29343f;
+            border-radius: 14px;
+            background: #10161d;
+        }
+
+        .hardware-type {
+            color: #6ee7b7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hardware-card h3 {
+            margin: 0;
+            font-size: 25px;
+            line-height: 1.3;
+        }
+
+        .hardware-card .description {
+            margin-top: 15px;
+            color: #aeb8c5;
+            font-size: 15px;
+        }
+
+        .specs {
+            margin: 26px 0 0;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid #29343f;
+        }
+
+        .specs li {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 12px 0;
+            border-bottom: 1px solid #202832;
+            font-size: 14px;
+        }
+
+        .specs .label {
+            color: #7f8c99;
+        }
+
+        .specs .value {
+            color: #dbe2e9;
+            text-align: right;
+            font-weight: 550;
+        }
+
+        .reason {
+            margin-top: 24px;
+            padding: 18px;
+            border-radius: 9px;
+            background: #151d25;
+        }
+
+        .reason strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .reason span {
+            color: #9ca8b6;
+            font-size: 14px;
+        }
+
+        .hardware-button {
+            margin-top: 26px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 0 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 650;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            color: #07100c;
+            background: #6ee7b7;
+        }
+
+        .button-primary:hover {
+            background: #8af0c9;
+        }
+
+        .button-secondary {
+            color: #e8edf3;
+            background: #151c24;
+            border: 1px solid #29343f;
+        }
+
+        .button-secondary:hover {
+            background: #1c252f;
+        }
+
+        /* =========================
+           推荐理由
+        ========================== */
+
+        .why-grid {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .why-card {
+            padding: 26px;
+            border-top: 2px solid #34404b;
+            background: #10161d;
+        }
+
+        .why-card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .why-card p {
+            margin: 0;
+            color: #929eac;
+            font-size: 14px;
+        }
+
+        /* =========================
+           安装
+        ========================== */
+
+        .setup {
+            background: #0e141a;
+        }
+
+        .setup-grid {
+            margin-top: 45px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .step {
+            padding: 26px;
+            border: 1px solid #252f39;
+            border-radius: 12px;
+            background: #10161d;
+        }
+
+        .step-number {
+            color: #6ee7b7;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        .step p {
+            margin: 0;
+            color: #929eac;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Note
+        ========================== */
+
+        .note {
+            max-width: 850px;
+            margin: 45px auto 0;
+            padding: 25px;
+            border: 1px solid #29343f;
+            border-radius: 12px;
+            background: #10161d;
+        }
+
+        .note p {
+            margin: 0;
+            color: #9ca8b6;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Footer
+        ========================== */
+
+        footer {
+            padding: 35px 0;
+            color: #788593;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            color: #dbe2e9;
+            font-weight: 650;
+        }
+
+        /* =========================
+           Responsive
+        ========================== */
+
+        @media (max-width: 800px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 80px 0 75px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .hero-subtitle {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .apps,
+            .recommendation,
+            .why-grid,
+            .setup-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hardware-card {
+                padding: 26px;
+            }
+
+            .specs li {
+                display: block;
+            }
+
+            .specs .value {
+                margin-top: 3px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+
+        <a href="/" class="logo">
+            EdgePair<span> Labs</span>
+        </a>
+
+        <nav>
+            <a href="#camera">IP 摄像头</a>
+            <a href="#tablet">Android 平板</a>
+            <a href="/recommend.html">English</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- =========================
+         Hero
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="eyebrow">
+                SNOOKER CLIP · POOLBALL CLIP
+            </div>
+
+            <h1>
+                推荐硬件，
+                让 <span class="accent">Edge AI</span> 更实用。
+            </h1>
+
+            <p class="hero-subtitle">
+                Snooker Clip 和 Poolball Clip 专为在日常硬件上高效运行而设计。
+                选择合适的摄像头和 Android 平板电脑，
+                即可实现简单可靠的实时视频处理。
+            </p>
+
+            <p class="hero-note">
+                我们根据实际使用场景选择并推荐这些硬件。
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         产品
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                EDGEPAIR LABS 产品
+            </div>
+
+            <h2 class="section-title">
+                一套设备，覆盖整张球桌。
+            </h2>
+
+            <p class="section-intro">
+                两款应用都采用固定摄像头拍摄球桌，
+                并使用 Android 设备进行本地 AI 视频处理。
+            </p>
+
+            <div class="apps">
+
+                <div class="app-card">
+                    <h3>Snooker <span>Clip</span></h3>
+                    <p>
+                        自动捕捉和分析斯诺克比赛中的每一杆，
+                        并生成精彩击球视频片段。
+                    </p>
+                </div>
+
+                <div class="app-card">
+                    <h3>Poolball <span>Clip</span></h3>
+                    <p>
+                        面向 8 球、9 球、10 球以及中式台球等
+                        多种美式台球比赛。
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         IP Camera
+    ========================== -->
+
+    <section id="camera">
+
+        <div class="container">
+
+            <div class="section-label">
+                推荐 IP 摄像头
+            </div>
+
+            <h2 class="section-title">
+                Amcrest IP2M-841 ProHD
+            </h2>
+
+            <p class="section-intro">
+                一款适合固定安装在球桌上方的 Wi-Fi IP 摄像头。
+                30 FPS 视频和 90° 视角能够提供稳定、流畅的画面，
+                适合球桌视频采集和实时 AI 分析。
+            </p>
+
+
+            <div class="recommendation">
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        IP 摄像头
+                    </div>
+
+                    <h3>
+                        Amcrest IP2M-841 ProHD 1080P WiFi IP Camera
+                    </h3>
+
+                    <p class="description">
+                        支持 1080p 高清视频的网络摄像头，
+                        可通过 Wi-Fi 将视频传输到本地网络中的 Android 设备。
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">分辨率</span>
+                            <span class="value">1920 × 1080</span>
+                        </li>
+
+                        <li>
+                            <span class="label">帧率</span>
+                            <span class="value">30 FPS</span>
+                        </li>
+
+                        <li>
+                            <span class="label">视角</span>
+                            <span class="value">90°</span>
+                        </li>
+
+                        <li>
+                            <span class="label">连接方式</span>
+                            <span class="value">Wi-Fi / IP</span>
+                        </li>
+
+                        <li>
+                            <span class="label">视频编码</span>
+                            <span class="value">H.264</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            推荐理由
+                        </strong>
+
+                        <span>
+                            30 FPS 可以提供流畅的运动画面，
+                            而 90° 的视角相比更广的镜头可以减少画面变形，
+                            非常适合固定安装在球桌上方，
+                            有助于 AI 更准确地识别球桌区域和球的位置。
+                            同时价格相对实惠，通常低于 100 美元，
+                            具体价格以当地市场为准。
+                        </span>
+
+                    </div>
+
+                    <div class="hardware-button">
+
+                        <a class="button button-primary"
+                           href="https://www.amazon.com.au/Amcrest-IP2M-841-1920TVL-Wireless-Camera/dp/B0145OQTPG/ref=sr_1_4"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            在 Amazon 查看
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        推荐摄像头设置
+                    </div>
+
+                    <h3>
+                        固定安装在球桌上方
+                    </h3>
+
+                    <p class="description">
+                        将摄像头稳定地安装在球桌上方，
+                        确保整个比赛区域都位于视频画面中。
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">分辨率</span>
+                            <span class="value">1280 × 720</span>
+                        </li>
+
+                        <li>
+                            <span class="label">编码</span>
+                            <span class="value">H.264</span>
+                        </li>
+
+                        <li>
+                            <span class="label">帧率</span>
+                            <span class="value">30 FPS 推荐</span>
+                        </li>
+
+                        <li>
+                            <span class="label">GOP</span>
+                            <span class="value">2 秒</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Smart Codec</span>
+                            <span class="value">关闭</span>
+                        </li>
+
+                        <li>
+                            <span class="label">音频</span>
+                            <span class="value">关闭</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            保持摄像头固定
+                        </strong>
+
+                        <span>
+                            稳定的摄像头位置可以让 AI 持续、准确地识别球桌，
+                            并在比赛过程中跟踪球的运动。
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Android Tablets
+    ========================== -->
+
+    <section id="tablet" class="setup">
+
+        <div class="container">
+
+            <div class="section-label">
+                推荐 ANDROID 平板电脑
+            </div>
+
+            <h2 class="section-title">
+                用经济实惠的设备运行本地 AI。
+            </h2>
+
+            <p class="section-intro">
+                Snooker Clip 和 Poolball Clip 直接在 Android 设备上进行 AI 处理。
+                以下平板电脑在处理性能、屏幕尺寸和价格之间提供了实用的平衡。
+            </p>
+
+
+            <div class="recommendation">
+
+                <!-- Lenovo -->
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        推荐平板电脑
+                    </div>
+
+                    <h3>
+                        Lenovo Idea Tab 11
+                    </h3>
+
+                    <p class="description">
+                        一款大屏 Android 平板电脑，
+                        适合在斯诺克或台球比赛过程中长时间运行应用。
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">屏幕</span>
+                            <span class="value">11 英寸级</span>
+                        </li>
+
+                        <li>
+                            <span class="label">系统</span>
+                            <span class="value">Android</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Wi-Fi</span>
+                            <span class="value">Wi-Fi 5</span>
+                        </li>
+
+                        <li>
+                            <span class="label">存储</span>
+                            <span class="value">128 GB</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            推荐理由
+                        </strong>
+
+                        <span>
+                            较大的屏幕可以更舒适地查看实时视频、
+                            已捕捉的击球、记分板以及母球运动轨迹。
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Samsung -->
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        推荐平板电脑
+                    </div>
+
+                    <h3>
+                        Samsung Galaxy Tab A11
+                    </h3>
+
+                    <p class="description">
+                        一款紧凑且经济实惠的 Android 平板电脑，
+                        适合进行本地 AI 处理以及控制应用。
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">屏幕</span>
+                            <span class="value">8.7 英寸</span>
+                        </li>
+
+                        <li>
+                            <span class="label">处理器</span>
+                            <span class="value">八核 2.2 / 2.0 GHz</span>
+                        </li>
+
+                        <li>
+                            <span class="label">内存</span>
+                            <span class="value">最高 8 GB</span>
+                        </li>
+
+                        <li>
+                            <span class="label">存储</span>
+                            <span class="value">最高 128 GB</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Wi-Fi</span>
+                            <span class="value">2.4 / 5 GHz</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            推荐理由
+                        </strong>
+
+                        <span>
+                            机身尺寸较小，可以方便地放置在球桌附近，
+                            同时仍提供足够的屏幕空间来操作应用。
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="note">
+
+                <p>
+                    <strong>注意：</strong>
+                    Android 平板电脑的具体规格可能因地区和配置而有所不同。
+                    不同型号和软件版本之间的实际性能也可能存在差异。
+                    以上设备为推荐型号，并非应用运行的强制要求。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         为什么选择这套设备
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                为什么选择这套设备
+            </div>
+
+            <h2 class="section-title">
+                简单、本地、经济实惠。
+            </h2>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+
+                    <h3>本地处理</h3>
+
+                    <p>
+                        视频直接在 Android 平板电脑上进行处理，
+                        AI 分析无需依赖云端服务器。
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <h3>固定摄像头</h3>
+
+                    <p>
+                        固定安装的 IP 摄像头可以提供稳定的视频源，
+                        用于实时球桌和球的检测。
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <h3>低部署成本</h3>
+
+                    <p>
+                        使用普通的 IP 摄像头和 Android 平板电脑，
+                        即可搭建 AI 驱动的球桌视频分析系统。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         基本安装
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                基本安装
+            </div>
+
+            <h2 class="section-title">
+                三个设备，简单开始。
+            </h2>
+
+            <div class="setup-grid">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        安装 IP 摄像头
+                    </h3>
+
+                    <p>
+                        将摄像头安装在球桌上方，
+                        确保完整的比赛区域都位于画面中。
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        连接 Wi-Fi
+                    </h3>
+
+                    <p>
+                        将摄像头和 Android 平板电脑连接到
+                        同一个本地网络。
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        启动应用
+                    </h3>
+
+                    <p>
+                        在 Snooker Clip 或 Poolball Clip 中连接摄像头，
+                        然后开始录制和 AI 分析。
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Final
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                EDGEPAIR LABS
+            </div>
+
+            <h2 class="section-title">
+                让实用的 Edge AI 运行在日常硬件上。
+            </h2>
+
+            <p class="section-intro">
+                我们的目标很简单：
+                无需昂贵的专用硬件或云端基础设施，
+                让实时计算机视觉真正应用于实际场景。
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <span class="footer-brand">
+                EdgePair Labs
+            </span>
+            <span>
+                — Pairing Edge Devices with Practical AI.
+            </span>
+        </div>
+
+        <div>
+            © 2026 EdgePair Labs
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
