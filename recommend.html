@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommended Hardware — Snooker Clip &amp; Poolball Clip</title>
+
+    <meta name="description"
+          content="Recommended IP cameras and Android tablets for Snooker Clip and Poolball Clip.">
+
+    <meta name="theme-color" content="#0b0f14">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            color: #e8edf3;
+            background: #0b0f14;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        /* =========================
+           Navigation
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(11, 15, 20, 0.88);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #202832;
+        }
+
+        .nav {
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.4px;
+        }
+
+        .logo span {
+            color: #6ee7b7;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 14px;
+            color: #aeb8c5;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* =========================
+           Hero
+        ========================= */
+
+        .hero {
+            padding: 110px 0 100px;
+            text-align: center;
+            border-bottom: 1px solid #202832;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 6px 12px;
+            border: 1px solid #29343f;
+            border-radius: 999px;
+            color: #6ee7b7;
+            background: #111820;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.08;
+            letter-spacing: -2.8px;
+            font-weight: 750;
+        }
+
+        .hero h1 .accent {
+            color: #6ee7b7;
+        }
+
+        .hero-subtitle {
+            max-width: 730px;
+            margin: 28px auto 0;
+            color: #aeb8c5;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .hero-note {
+            margin-top: 24px;
+            color: #7f8c99;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Sections
+        ========================= */
+
+        section {
+            padding: 90px 0;
+            border-bottom: 1px solid #202832;
+        }
+
+        .section-label {
+            color: #6ee7b7;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            margin: 0;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+        }
+
+        .section-intro {
+            max-width: 730px;
+            margin-top: 18px;
+            color: #aeb8c5;
+            font-size: 17px;
+        }
+
+        /* =========================
+           Product tabs / intro
+        ========================= */
+
+        .apps {
+            margin-top: 42px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .app-card {
+            padding: 26px;
+            border: 1px solid #29343f;
+            border-radius: 12px;
+            background: #10161d;
+        }
+
+        .app-card h3 {
+            margin: 0 0 8px;
+            font-size: 20px;
+        }
+
+        .app-card h3 span {
+            color: #6ee7b7;
+        }
+
+        .app-card p {
+            margin: 0;
+            color: #929eac;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Recommendation cards
+        ========================= */
+
+        .recommendation {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .hardware-card {
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+            border: 1px solid #29343f;
+            border-radius: 14px;
+            background: #10161d;
+        }
+
+        .hardware-type {
+            color: #6ee7b7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hardware-card h3 {
+            margin: 0;
+            font-size: 25px;
+            line-height: 1.3;
+        }
+
+        .hardware-card .description {
+            margin-top: 15px;
+            color: #aeb8c5;
+            font-size: 15px;
+        }
+
+        .specs {
+            margin: 26px 0 0;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid #29343f;
+        }
+
+        .specs li {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 12px 0;
+            border-bottom: 1px solid #202832;
+            font-size: 14px;
+        }
+
+        .specs .label {
+            color: #7f8c99;
+        }
+
+        .specs .value {
+            color: #dbe2e9;
+            text-align: right;
+            font-weight: 550;
+        }
+
+        .reason {
+            margin-top: 24px;
+            padding: 18px;
+            border-radius: 9px;
+            background: #151d25;
+        }
+
+        .reason strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .reason span {
+            color: #9ca8b6;
+            font-size: 14px;
+        }
+
+        .hardware-button {
+            margin-top: 26px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 0 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 650;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            color: #07100c;
+            background: #6ee7b7;
+        }
+
+        .button-primary:hover {
+            background: #8af0c9;
+        }
+
+        .button-secondary {
+            color: #e8edf3;
+            background: #151c24;
+            border: 1px solid #29343f;
+        }
+
+        .button-secondary:hover {
+            background: #1c252f;
+        }
+
+        /* =========================
+           Why this hardware
+        ========================= */
+
+        .why-grid {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .why-card {
+            padding: 26px;
+            border-top: 2px solid #34404b;
+            background: #10161d;
+        }
+
+        .why-card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .why-card p {
+            margin: 0;
+            color: #929eac;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Setup
+        ========================= */
+
+        .setup {
+            background: #0e141a;
+        }
+
+        .setup-grid {
+            margin-top: 45px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .step {
+            padding: 26px;
+            border: 1px solid #252f39;
+            border-radius: 12px;
+            background: #10161d;
+        }
+
+        .step-number {
+            color: #6ee7b7;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        .step p {
+            margin: 0;
+            color: #929eac;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Note
+        ========================= */
+
+        .note {
+            max-width: 850px;
+            margin: 45px auto 0;
+            padding: 25px;
+            border: 1px solid #29343f;
+            border-radius: 12px;
+            background: #10161d;
+        }
+
+        .note p {
+            margin: 0;
+            color: #9ca8b6;
+            font-size: 14px;
+        }
+
+        /* =========================
+           Footer
+        ========================= */
+
+        footer {
+            padding: 35px 0;
+            color: #788593;
+            font-size: 13px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            color: #dbe2e9;
+            font-weight: 650;
+        }
+
+        /* =========================
+           Responsive
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 80px 0 75px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .hero-subtitle {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .apps,
+            .recommendation,
+            .why-grid,
+            .setup-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hardware-card {
+                padding: 26px;
+            }
+
+            .specs li {
+                display: block;
+            }
+
+            .specs .value {
+                margin-top: 3px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+
+        <a href="/" class="logo">
+            EdgePair<span> Labs</span>
+        </a>
+
+        <nav>
+            <a href="#camera">IP Camera</a>
+            <a href="#tablet">Android Tablet</a>
+            <a href="/recommend.html">中文</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- =========================
+         IP CAMERA
+    ========================== -->
+
+    <section id="camera">
+
+        <div class="container">
+
+            <div class="section-label">
+                RECOMMENDED IP CAMERA
+            </div>
+
+            <h2 class="section-title">
+                Amcrest IP2M-841 ProHD
+            </h2>
+
+            <p class="section-intro">
+                A practical Wi-Fi IP camera for fixed-table installation.
+                Its 30 FPS video and 90° viewing angle make it a good fit
+                for capturing the full playing area from a suitable
+                mounting position.
+            </p>
+
+
+            <div class="recommendation">
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        IP Camera
+                    </div>
+
+                    <h3>
+                        Amcrest IP2M-841 ProHD 1080P WiFi IP Camera
+                    </h3>
+
+                    <p class="description">
+                        Full HD 1080p network camera designed for
+                        continuous video streaming over a local network.
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">Resolution</span>
+                            <span class="value">1920 × 1080</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Frame Rate</span>
+                            <span class="value">30 FPS</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Viewing Angle</span>
+                            <span class="value">90°</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Connection</span>
+                            <span class="value">Wi-Fi / IP</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Video</span>
+                            <span class="value">H.264</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            Why we recommend it
+                        </strong>
+
+                        <span>
+                            30 FPS provides smooth motion capture, while
+                            the 90° viewing angle helps reduce lens distortion compared with
+                            wider-angle cameras. It is also positioned
+                            as an affordable camera option, typically
+                            under US$100.
+                        </span>
+
+                    </div>
+
+                    <div class="hardware-button">
+
+                        <a class="button button-primary"
+                           href="https://www.amazon.com.au/Amcrest-IP2M-841-1920TVL-Wireless-Camera/dp/B0145OQTPG/ref=sr_1_4"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View on Amazon
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        Recommended Camera Setup
+                    </div>
+
+                    <h3>
+                        Fixed camera above the table
+                    </h3>
+
+                    <p class="description">
+                        For best results, mount the camera securely and
+                        keep the entire playing area visible in the
+                        video frame.
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">Resolution</span>
+                            <span class="value">1280 × 720</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Codec</span>
+                            <span class="value">H.264</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Frame Rate</span>
+                            <span class="value">30 FPS</span>
+                        </li>
+
+                        <li>
+                            <span class="label">GOP</span>
+                            <span class="value">2 seconds</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Smart Codec</span>
+                            <span class="value">Disabled</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Audio</span>
+                            <span class="value">Off</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            Keep the camera fixed
+                        </strong>
+
+                        <span>
+                            A stable camera position allows the AI to
+                            consistently detect the table and track
+                            ball movement during the game.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ANDROID TABLETS
+    ========================== -->
+
+    <section id="tablet" class="setup">
+
+        <div class="container">
+
+            <div class="section-label">
+                RECOMMENDED ANDROID TABLETS
+            </div>
+
+            <h2 class="section-title">
+                Affordable hardware for local AI.
+            </h2>
+
+            <p class="section-intro">
+                Snooker Clip and Poolball Clip perform AI processing
+                directly on the Android device. These tablets provide
+                a practical balance between processing performance,
+                screen size and cost.
+            </p>
+
+
+            <div class="recommendation">
+
+                <!-- Lenovo -->
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        Recommended Tablet
+                    </div>
+
+                    <h3>
+                        Lenovo Idea Tab 11
+                    </h3>
+
+                    <p class="description">
+                        A large-screen Android tablet suitable for
+                        operating the app during extended snooker or
+                        pool sessions.
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">Display</span>
+                            <span class="value">11-inch class</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Platform</span>
+                            <span class="value">Android</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Wi-Fi</span>
+                            <span class="value">Wi-Fi 5</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Storage</span>
+                            <span class="value">128 GB</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            Why we recommend it
+                        </strong>
+
+                        <span>
+                            Its larger display provides a comfortable
+                            interface for viewing live video, captured
+                            shots, the scoreboard and cue-ball paths.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Samsung -->
+
+                <div class="hardware-card">
+
+                    <div class="hardware-type">
+                        Recommended Tablet
+                    </div>
+
+                    <h3>
+                        Samsung Galaxy Tab A11
+                    </h3>
+
+                    <p class="description">
+                        A compact and affordable Android tablet that
+                        provides a practical device for local AI
+                        processing and game control.
+                    </p>
+
+                    <ul class="specs">
+
+                        <li>
+                            <span class="label">Display</span>
+                            <span class="value">8.7-inch</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Processor</span>
+                            <span class="value">Octa-Core 2.2 / 2.0 GHz</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Memory</span>
+                            <span class="value">Up to 8 GB</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Storage</span>
+                            <span class="value">Up to 128 GB</span>
+                        </li>
+
+                        <li>
+                            <span class="label">Wi-Fi</span>
+                            <span class="value">2.4 / 5 GHz</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="reason">
+
+                        <strong>
+                            Why we recommend it
+                        </strong>
+
+                        <span>
+                            Its compact size makes it easy to place near
+                            the table while still providing enough screen
+                            space to operate the app comfortably.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="note">
+
+                <p>
+                    <strong>Note:</strong>
+                    Android tablet specifications can vary by region
+                    and configuration. Performance may also vary between
+                    models and software versions. The tablets listed here
+                    are recommended hardware choices, not mandatory
+                    requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY THIS SETUP
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                WHY THIS SETUP
+            </div>
+
+            <h2 class="section-title">
+                Simple. Local. Affordable.
+            </h2>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+
+                    <h3>Local Processing</h3>
+
+                    <p>
+                        Video is processed directly on the Android
+                        tablet. No cloud server is required for
+                        AI processing.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <h3>Fixed Camera</h3>
+
+                    <p>
+                        A fixed IP camera provides a stable video
+                        source for real-time table and ball detection.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <h3>Low Deployment Cost</h3>
+
+                    <p>
+                        Commodity cameras and Android tablets can
+                        provide the hardware needed for an AI-powered
+                        table setup.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SETUP
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                BASIC SETUP
+            </div>
+
+            <h2 class="section-title">
+                Get started with three components.
+            </h2>
+
+            <div class="setup-grid">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Mount the IP Camera
+                    </h3>
+
+                    <p>
+                        Position the camera above the table so the
+                        complete playing area is visible.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Connect to Wi-Fi
+                    </h3>
+
+                    <p>
+                        Connect the camera and Android tablet to the
+                        same local network.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Start the App
+                    </h3>
+
+                    <p>
+                        Connect the camera in Snooker Clip or
+                        Poolball Clip and start capturing.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-label">
+                EDGEPAIR LABS
+            </div>
+
+            <h2 class="section-title">
+                Practical Edge AI on everyday hardware.
+            </h2>
+
+            <p class="section-intro">
+                Our goal is simple: make real-time computer vision
+                useful without requiring expensive dedicated hardware
+                or cloud infrastructure.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <span class="footer-brand">
+                EdgePair Labs
+            </span>
+            <span>
+                — Pairing Edge Devices with Practical AI.
+            </span>
+        </div>
+
+        <div>
+            © 2026 EdgePair Labs
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
