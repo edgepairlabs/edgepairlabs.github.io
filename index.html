@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN">
 
-    <title>EdgePair Labs — Practical Edge AI</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EdgePair Labs — 实用 Edge AI</title>
 
     <meta name="description"
-          content="EdgePair Labs builds practical Edge AI software that delivers high performance on low-cost hardware.">
+          content="EdgePair Labs 专注于实用的 Edge AI 软件，让高性能人工智能运行在低成本的日常硬件上">
 
     <meta name="theme-color" content="#0b0f14">
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -29,6 +34,9 @@
                 Roboto,
                 Helvetica,
                 Arial,
+                "PingFang SC",
+                "Hiragino Sans GB",
+                "Microsoft YaHei",
                 sans-serif;
             color: #e8edf3;
             background: #0b0f14;
@@ -44,6 +52,7 @@
             width: min(1120px, calc(100% - 40px));
             margin: 0 auto;
         }
+
 
         /* =========================
            Navigation
@@ -91,6 +100,7 @@
             color: #ffffff;
         }
 
+
         /* =========================
            Hero
         ========================= */
@@ -118,7 +128,7 @@
             max-width: 900px;
             margin: 0 auto;
             font-size: clamp(44px, 7vw, 76px);
-            line-height: 1.05;
+            line-height: 1.08;
             letter-spacing: -3px;
             font-weight: 750;
         }
@@ -159,7 +169,9 @@
             border-radius: 8px;
             font-size: 14px;
             font-weight: 650;
-            transition: transform 0.2s, background 0.2s;
+            transition:
+                transform 0.2s,
+                background 0.2s;
         }
 
         .button:hover {
@@ -184,6 +196,7 @@
         .button-secondary:hover {
             background: #1c252f;
         }
+
 
         /* =========================
            Section
@@ -216,6 +229,7 @@
             color: #aeb8c5;
             font-size: 17px;
         }
+
 
         /* =========================
            Vision
@@ -252,6 +266,7 @@
             color: #9ca8b6;
             font-size: 15px;
         }
+
 
         /* =========================
            Philosophy
@@ -305,6 +320,7 @@
             color: #9ca8b6;
             font-size: 14px;
         }
+
 
         /* =========================
            Product
@@ -367,69 +383,22 @@
             justify-content: center;
             border: 1px solid #29343f;
             border-radius: 16px;
-            background: radial-gradient(circle at 50% 45%, #1a2927 0%, #10161d 48%, #0b0f14 75%);
+            background:
+                radial-gradient(
+                    circle at 50% 45%,
+                    #1a2927 0%,
+                    #10161d 48%,
+                    #0b0f14 75%
+                );
             overflow: hidden;
         }
 
-        /* Add this rule for the image */
         .product-visual img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Crops image proportionally to fill the box without distorting */
+            object-fit: cover;
         }
 
-        .snooker-table {
-            width: 72%;
-            aspect-ratio: 2 / 1;
-            border: 12px solid #513c28;
-            border-radius: 8px;
-            background: #174b36;
-            position: relative;
-            box-shadow:
-                0 20px 60px rgba(0, 0, 0, 0.5);
-        }
-
-        .snooker-table::before,
-        .snooker-table::after {
-            content: "";
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #050706;
-            top: -8px;
-        }
-
-        .snooker-table::before {
-            left: -8px;
-        }
-
-        .snooker-table::after {
-            right: -8px;
-        }
-
-        .ball {
-            position: absolute;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: #f5f5f5;
-            left: 35%;
-            top: 48%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-        }
-
-        .ball::after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 2px;
-            left: 12px;
-            top: 8px;
-            background: rgba(110, 231, 183, 0.7);
-            transform: rotate(-18deg);
-            transform-origin: left center;
-        }
 
         /* =========================
            Technology
@@ -459,6 +428,7 @@
             font-size: 14px;
         }
 
+
         /* =========================
            Future
         ========================= */
@@ -486,6 +456,23 @@
             color: #b8c2cd;
             font-size: 16px;
         }
+
+
+        /* =========================
+           Contact
+        ========================= */
+
+        .contact-language {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #9ca8b6;
+        }
+
+        .contact-language a {
+            color: #6ee7b7;
+            font-weight: 600;
+        }
+
 
         /* =========================
            Footer
@@ -527,6 +514,7 @@
             font-weight: 600;
         }
 
+
         /* =========================
            Responsive
         ========================= */
@@ -567,455 +555,517 @@
             .product-visual {
                 min-height: 280px;
             }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     NAVIGATION
+========================== -->
+
 <header>
+
     <div class="container nav">
 
-        <a href="#" class="logo">
+        <a href="/cn/" class="logo">
             EdgePair<span> Labs</span>
         </a>
 
         <nav>
-            <a href="#vision">Vision</a>
-            <a href="#product">Product</a>
-            <a href="#technology">Technology</a>
-            <a href="#contact">Contact</a>
-            <a href="/cn/">中文</a>
+            <a href="#vision">愿景</a>
+            <a href="#product">产品</a>
+            <a href="#technology">技术</a>
+            <a href="#contact">联系我们</a>
+            <a href="/">English</a>
         </nav>
 
     </div>
+
 </header>
 
 
 <main>
 
-    <!-- =========================
-         HERO
-    ========================== -->
 
-    <section class="hero">
+<!-- =========================
+     HERO
+========================== -->
 
-        <div class="container">
+<section class="hero">
 
-            <div class="eyebrow">
-                PRACTICAL EDGE AI
-            </div>
+    <div class="container">
 
-            <h1>
-                AI that runs where
-                <span class="accent">it matters.</span>
-            </h1>
+        <div class="eyebrow">
+            实用 Edge AI
+        </div>
 
-            <p class="hero-subtitle">
-                We build practical machine learning solutions that run
-                efficiently on everyday hardware, reducing deployment cost
-                without sacrificing real-world performance.
-            </p>
+        <h1>
+            让 AI 运行在<br>
+            <span class="accent">真正需要它的地方</span>
+        </h1>
 
-            <div class="hero-tagline">
-                Pairing Edge Devices with Practical AI.
-            </div>
+        <p class="hero-subtitle">
+            我们专注于开发实用的机器学习解决方案，
+            让 AI 高效运行在日常硬件上，
+            在降低部署成本的同时，保持真实世界中的性能
+        </p>
 
-            <div class="hero-buttons">
-                <a class="button button-primary"
-                   href="#product">
-                    Explore Snooker Clip
-                </a>
+        <div class="hero-tagline">
+            将边缘设备与实用 AI 结合
+        </div>
 
-                <a class="button button-secondary"
-                   href="#vision">
-                    Our Approach
-                </a>
-            </div>
+        <div class="hero-buttons">
+
+            <a class="button button-primary"
+               href="#product">
+                探索 Snooker Clip
+            </a>
+
+            <a class="button button-secondary"
+               href="#vision">
+                了解我们的理念
+            </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         VISION
-    ========================== -->
+<!-- =========================
+     VISION
+========================== -->
 
-    <section id="vision">
+<section id="vision">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-label">
-                OUR VISION
-            </div>
-
-            <h2 class="section-title">
-                Building AI for the real world.
-            </h2>
-
-            <p class="section-intro">
-                EdgePair Labs develops software that brings machine learning
-                directly to edge devices — where data is generated, decisions
-                need to be made, and cloud infrastructure is not always
-                practical.
-            </p>
-
-
-            <div class="vision-grid">
-
-                <div class="card">
-                    <div class="card-number">01</div>
-
-                    <h3>Edge First</h3>
-
-                    <p>
-                        Process data directly on the device instead of
-                        depending on cloud infrastructure or constant
-                        Internet connectivity.
-                    </p>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-number">02</div>
-
-                    <h3>Practical AI</h3>
-
-                    <p>
-                        We focus on machine learning that solves useful
-                        problems reliably in real-world environments,
-                        not just benchmark datasets.
-                    </p>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-number">03</div>
-
-                    <h3>Efficient Hardware</h3>
-
-                    <p>
-                        Our goal is high-performance AI on affordable,
-                        widely available hardware — making deployment
-                        simpler and more accessible.
-                    </p>
-                </div>
-
-            </div>
-
+        <div class="section-label">
+            我们的愿景
         </div>
 
-    </section>
+        <h2 class="section-title">
+            为真实世界构建 AI
+        </h2>
 
+        <p class="section-intro">
+            EdgePair Labs 开发能够直接运行在边缘设备上的软件，
+            让机器学习更接近数据产生的地方，
+            在需要实时决策的场景中发挥作用，
+            同时减少对云端基础设施的依赖
+        </p>
 
-    <!-- =========================
-         PHILOSOPHY
-    ========================== -->
 
-    <section>
+        <div class="vision-grid">
 
-        <div class="container philosophy">
+            <div class="card">
 
-            <div class="quote">
+                <div class="card-number">01</div>
 
-                <p class="quote-text">
-                    Building practical Edge AI software that delivers
-                    high performance on low-cost hardware.
-                </p>
-
-                <p class="quote-description">
-                    This is the principle behind our products and
-                    technology development.
-                </p>
-
-            </div>
-
-
-            <div class="principles">
-
-                <div class="principle">
-                    <strong>Performance</strong>
-                    <span>
-                        Efficient models and optimized processing pipelines.
-                    </span>
-                </div>
-
-                <div class="principle">
-                    <strong>Privacy</strong>
-                    <span>
-                        Keep data and computation close to where they are created.
-                    </span>
-                </div>
-
-                <div class="principle">
-                    <strong>Accessibility</strong>
-                    <span>
-                        Reduce the hardware requirements needed to deploy AI.
-                    </span>
-                </div>
-
-                <div class="principle">
-                    <strong>Real-World Deployment</strong>
-                    <span>
-                        Build systems that work outside the laboratory.
-                    </span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PRODUCT
-    ========================== -->
-
-    <section id="product" class="product-section">
-
-        <div class="container">
-
-            <div class="section-label">
-                FIRST PRODUCT
-            </div>
-
-            <h2 class="section-title">
-                Turning Edge AI into useful products.
-            </h2>
-
-            <div class="product">
-
-                <div>
-
-                    <div class="product-name">
-                        Snooker <span>Clip</span>
-                    </div>
-
-                    <p class="product-description">
-                        Our first product applies computer vision and
-                        on-device AI to automatically detect and capture
-                        snooker shots in real time.
-                    </p>
-
-                    <ul class="feature-list">
-
-                        <li>
-                            Automatically captures every shot
-                        </li>
-
-                        <li>
-                            Real-time cue ball tracking
-                        </li>
-
-                        <li>
-                            Built-in scoreboard
-                        </li>
-
-                        <li>
-                            Creates highlight clips automatically
-                        </li>
-
-                        <li>
-                            Fast local video processing
-                        </li>
-
-                        <li>
-                            100% local processing
-                        </li>
-
-                    </ul>
-
-                    <div class="hero-buttons"
-                         style="justify-content:flex-start; margin-top:30px;">
-
-                        <a class="button button-primary"
-                           href="https://play.google.com/"
-                           target="_blank"
-                           rel="noopener">
-                            Google Play
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="product-visual">
-                    <img src="cover.jpg" alt="Product cover">
-                </div>
-            </div>
-
-                        <div class="product">
-
-                <div>
-
-                    <div class="product-name">
-                        Pool Ball <span>Clip</span>
-                    </div>
-
-                    <p class="product-description">
-                        Support most types of Pool ball.
-                    </p>
-
-                    <ul class="feature-list">
-                        <li>Standard 8-Ball (American Pool)</li>
-                        <li>Chinese 8-Ball (Heyball)</li>
-                        <li>9-Ball</li>
-                        <li>10-Ball</li>
-                    </ul>
-
-                    <div class="hero-buttons"
-                         style="justify-content:flex-start; margin-top:30px;">
-                        <a class="button button-primary"
-                           href="https://play.google.com/"
-                           target="_blank"
-                           rel="noopener">
-                            Google Play
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="product-visual">
-                    <img src="pool_cover.jpg" alt="Pool Ball Clip product cover">
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         TECHNOLOGY
-    ========================== -->
-
-    <section id="technology">
-
-        <div class="container">
-
-            <div class="section-label">
-                TECHNOLOGY
-            </div>
-
-            <h2 class="section-title">
-                Designed for the edge.
-            </h2>
-
-            <p class="section-intro">
-                EdgePair Labs focuses on the complete path from machine
-                learning model to usable edge application.
-            </p>
-
-
-            <div class="tech-grid">
-
-                <div class="tech">
-                    <h3>Computer Vision</h3>
-                    <p>
-                        Detect objects, events and movements directly
-                        from live video.
-                    </p>
-                </div>
-
-                <div class="tech">
-                    <h3>On-Device AI</h3>
-                    <p>
-                        Run inference locally without relying on
-                        cloud processing.
-                    </p>
-                </div>
-
-                <div class="tech">
-                    <h3>Efficient Models</h3>
-                    <p>
-                        Optimize models for limited CPU, GPU and
-                        memory resources.
-                    </p>
-                </div>
-
-                <div class="tech">
-                    <h3>Real-Time Processing</h3>
-                    <p>
-                        Turn continuous sensor and video streams
-                        into useful events and actions.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         FUTURE
-    ========================== -->
-
-    <section class="future">
-
-        <div class="container">
-
-            <div class="section-label">
-                BEYOND SNOOKER
-            </div>
-
-            <h2 class="section-title">
-                One platform. Many possibilities.
-            </h2>
-
-            <p class="section-intro">
-                Snooker Clip is our first application of the technology.
-                The same edge AI approach can be adapted to other
-                real-world event detection and monitoring problems.
-            </p>
-
-
-            <div class="future-box">
+                <h3>边缘优先</h3>
 
                 <p>
-                    We are exploring reusable computer vision and
-                    event-detection technologies that can run efficiently
-                    on everyday devices — from smartphones and tablets
-                    to dedicated edge hardware.
+                    直接在设备上处理数据，
+                    无需依赖云端基础设施或持续的互联网连接
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-number">02</div>
+
+                <h3>实用 AI</h3>
+
+                <p>
+                    我们专注于利用机器学习解决真实世界中的实际问题，
+                    而不仅仅是在基准数据集上取得漂亮的成绩
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-number">03</div>
+
+                <h3>高效硬件</h3>
+
+                <p>
+                    让高性能 AI 运行在价格合理、
+                    广泛可用的硬件上，
+                    使部署更加简单和普及
                 </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
+<!-- =========================
+     PHILOSOPHY
+========================== -->
 
-    <section id="contact">
+<section>
 
-        <div class="container future">
+    <div class="container philosophy">
 
-            <div class="section-label">
-                EDGEPAIR LABS
-            </div>
+        <div class="quote">
 
-            <h2 class="section-title">
-                Practical AI. Real devices. Real results.
-            </h2>
+            <p class="quote-text">
+                构建实用的 Edge AI 软件，
+                让高性能 AI 运行在低成本硬件上
+            </p>
 
-            <p class="section-intro">
-                We believe useful AI should not require expensive hardware
-                or a cloud connection to deliver value.
+            <p class="quote-description">
+                这是我们产品和技术开发的核心理念
             </p>
 
         </div>
 
-    </section>
+
+        <div class="principles">
+
+            <div class="principle">
+
+                <strong>性能</strong>
+
+                <span>
+                    高效的模型与优化的处理流程
+                </span>
+
+            </div>
+
+
+            <div class="principle">
+
+                <strong>隐私</strong>
+
+                <span>
+                    让数据和计算尽可能留在产生数据的设备上
+                </span>
+
+            </div>
+
+
+            <div class="principle">
+
+                <strong>可普及性</strong>
+
+                <span>
+                    降低部署 AI 所需的硬件门槛
+                </span>
+
+            </div>
+
+
+            <div class="principle">
+
+                <strong>真实世界部署</strong>
+
+                <span>
+                    构建能够走出实验室、真正投入使用的系统
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCT
+========================== -->
+
+<section id="product" class="product-section">
+
+    <div class="container">
+
+        <div class="section-label">
+            第一款产品
+        </div>
+
+        <h2 class="section-title">
+            将 Edge AI 转化为实用产品
+        </h2>
+
+
+        <div class="product">
+
+            <div>
+
+                <div class="product-name">
+                    Snooker <span>Clip</span>
+                </div>
+
+                <p class="product-description">
+                    我们的第一款产品，
+                    利用计算机视觉和设备端 AI，
+                    实时自动检测并捕捉斯诺克击球
+                </p>
+
+
+                <ul class="feature-list">
+
+                    <li>
+                        自动捕捉每一次击球
+                    </li>
+
+                    <li>
+                        实时跟踪母球
+                    </li>
+
+                    <li>
+                        内置记分板
+                    </li>
+
+                    <li>
+                        自动生成精彩击球片段
+                    </li>
+
+                    <li>
+                        快速本地视频处理
+                    </li>
+
+                    <li>
+                        100% 本地处理
+                    </li>
+
+                </ul>
+
+
+                <div class="hero-buttons"
+                     style="justify-content:flex-start; margin-top:30px;">
+
+                    <a class="button button-primary"
+                       href="https://play.google.com/store/apps/details?id=com.edgepairlabs.snookerclip"
+                       target="_blank"
+                       rel="noopener">
+                        Google Play
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-visual">
+
+                <img src="../cover.jpg"
+                     alt="Snooker Clip 产品展示">
+
+            </div>
+
+        </div>
+
+        <div class="product">
+
+            <div>
+
+                <div class="product-name">
+                    Pool Ball <span>Clip</span>
+                </div>
+
+                <p class="product-description">
+                    支持大多数台球类型。
+                </p>
+
+                <ul class="feature-list">
+                    <li>美式八球</li>
+                    <li>中式八球</li>
+                    <li>九球</li>
+                    <li>十球</li>
+                </ul>
+
+                <div class="hero-buttons"
+                     style="justify-content:flex-start; margin-top:30px;">
+                    <a class="button button-primary"
+                       href="https://play.google.com/store/apps/details?id=com.edgepairlabs.poolballclip"
+                       target="_blank"
+                       rel="noopener">
+                        Google Play
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="product-visual">
+                <img src="/pool_cover.jpg" alt="Pool Ball Clip product cover">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TECHNOLOGY
+========================== -->
+
+<section id="technology">
+
+    <div class="container">
+
+        <div class="section-label">
+            技术
+        </div>
+
+        <h2 class="section-title">
+            为边缘设备而设计
+        </h2>
+
+        <p class="section-intro">
+            EdgePair Labs 专注于从机器学习模型到实际边缘应用的完整技术链路，
+            让 AI 真正运行在资源有限的设备上
+        </p>
+
+
+        <div class="tech-grid">
+
+            <div class="tech">
+
+                <h3>计算机视觉</h3>
+
+                <p>
+                    直接从实时视频中检测物体、
+                    事件和运动
+                </p>
+
+            </div>
+
+
+            <div class="tech">
+
+                <h3>设备端 AI</h3>
+
+                <p>
+                    在本地运行 AI 推理，
+                    不依赖云端处理
+                </p>
+
+            </div>
+
+
+            <div class="tech">
+
+                <h3>高效模型</h3>
+
+                <p>
+                    针对有限的 CPU、GPU 和内存资源
+                    优化机器学习模型
+                </p>
+
+            </div>
+
+
+            <div class="tech">
+
+                <h3>实时处理</h3>
+
+                <p>
+                    将持续的视频和传感器数据
+                    转化为有用的事件和行动
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FUTURE
+========================== -->
+
+<section class="future">
+
+    <div class="container">
+
+        <div class="section-label">
+            超越斯诺克
+        </div>
+
+        <h2 class="section-title">
+            一个技术平台，多种可能
+        </h2>
+
+        <p class="section-intro">
+            Snooker Clip 是我们对这项技术的第一次应用<br>
+            同样的 Edge AI 技术也可以应用于其他事件检测和智能监测场景
+        </p>
+
+
+        <div class="future-box">
+
+            <p>
+                我们正在探索可复用的计算机视觉和事件检测技术，
+                让它们能够高效运行在日常设备上<br>
+                从智能手机和平板电脑，到专用边缘硬件
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section id="contact">
+
+    <div class="container future">
+
+        <div class="section-label">
+            EDGEPAIR LABS
+        </div>
+
+        <h2 class="section-title">
+            实用 AI — 真实设备 — 真实成果
+        </h2>
+
+        <p class="section-intro">
+            我们相信，有价值的 AI 不应该依赖昂贵的硬件
+            或云端连接才能发挥作用
+        </p>
+
+    </div>
+
+</section>
+
 
 </main>
 
+
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
@@ -1028,17 +1078,17 @@
             </span>
 
             <span>
-                — Pairing Edge Devices with Practical AI.
+                — 将边缘设备与实用 AI 结合
             </span>
 
             <div class="footer-language">
 
-                <span class="current">English</span>
+                <span class="current">中文</span>
 
                 <span> · </span>
 
-                <a href="/cn/">
-                    中文
+                <a href="/">
+                    English
                 </a>
 
             </div>
@@ -1062,5 +1112,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
