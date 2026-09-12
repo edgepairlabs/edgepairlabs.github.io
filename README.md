@@ -30,7 +30,7 @@ The goal is simple:
 
 ### Snooker Clip
 
-[Snooker Clip](https://play.google.com/) is our first application of Edge AI technology.
+[Snooker Clip](https://play.google.com/store/apps/details?id=com.edgepairlabs.snookerclip) is our first application of Edge AI technology.
 
 It uses computer vision and on-device AI to automatically detect and capture snooker shots in real time.
 
