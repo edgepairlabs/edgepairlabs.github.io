@@ -47,6 +47,15 @@ Snooker Clip is designed to run smoothly on everyday Android devices, including 
 
 ![Snooker Clip](https://edgepairlabs.com/cover.jpg)
 
+### Pool Ball Clip
+
+An Android app that automatically captures, analyzes, and lets you share your best pool shots in real time.
+
+Supports 9-Ball, US Pool, Chinese Heyball, and other pool games.
+
+https://play.google.com/store/apps/details?id=com.edgepairlabs.poolballclip
+
+
 ## Technology
 
 Our work focuses on:
